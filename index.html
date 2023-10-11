@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/lineIcons.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel ="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
   </head>
 
   <body>
@@ -101,16 +102,16 @@
                 </div>
                 <!-- navbar collapse -->
 
-                <div class="navbar-btn d-none d-sm-inline-block">
+               <div class="navbar-btn d-sm-inline-block" id="form-open">
                   <a
                     class="main-btn"
                     data-scroll-nav="0"
-                    href="javascript:void(0)"
-                    rel="nofollow"
                   >
-                    Sign Up
+                    Login
                   </a>
                 </div>
+              
+                
               </nav>
               <!-- navbar -->
             </div>
@@ -186,7 +187,64 @@
     <!--====== HEADER PART ENDS ======-->
 
 
-
+<section class="home">
+  <div class="form-container">
+    <i class="uil uil-times form_close"></i>
+    <!-- login form -->
+    <div class="form login_form">
+      <form action="#">
+    <h2>Login</h2>
+    <div class ="input_box">
+      <input type="email" placeholder="Enter your Email" required/>
+      <i class="uil uil-envelope-alt email"></i>
+    </div>
+    <div class ="input_box">
+      <input type="password" placeholder="Enter your password" required/>
+      <i class="uil uil-lock password"></i>
+      <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+    <div class="option_field">
+      <span class="checkbox">
+        <input type="checkbox" id="check">
+        <label for="check">Remember me</label>
+      </span>
+      <a href="#" class="forgot_pw">Forget password?</a>
+    </div>
+    <button class="button">Login Now</button>
+    <!-- <p>or</p> --><hr>
+    <button class="googlebutton">Continue With Google</button>
+    <div class="login_signup">
+      Don't have an account? <a href="#" id="signup">SignUp</a>
+    </div>
+  </form>
+  </div>
+  <!--signUP-->
+  <div class="form signup_form">
+    <form action="#">
+  <h2>Signup</h2>
+  <div class ="input_box">
+    <input type="email" placeholder="Enter your Email" required/>
+    <i class="uil uil-envelope-alt email"></i>
+  </div>
+  <div class ="input_box">
+    <input type="password" placeholder="Create password" required/>
+    <i class="uil uil-lock password"></i>
+    <i class="uil uil-eye-slash pw_hide"></i>
+  </div>
+  <div class ="input_box">
+    <input type="password" placeholder="Confirm password" required/>
+    <i class="uil uil-lock password"></i>
+    <i class="uil uil-eye-slash pw_hide"></i>
+  </div>
+  
+  <button class="button">SignUp Now</button>
+  <div class="login_signup">
+    Already have an account? <a href="#" id="signup">Login</a>
+  </div>
+</form>
+</div>
+  </div>
+</section>
     <!--====== SERVICES PART START ======-->
     <section id="features" class="services-area pt-120">
       <div class="container">
@@ -656,6 +714,7 @@
         </div>
         <!-- row -->
       </div>
+      
       <!-- container -->
     </section>
 
