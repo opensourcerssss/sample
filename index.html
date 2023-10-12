@@ -105,9 +105,20 @@
                <div class="navbar-btn d-sm-inline-block" id="form-open">
                   <a
                     class="main-btn"
+                    id="loginlink"
                     data-scroll-nav="0"
                   >
                     Login
+                  </a>
+                </div>
+               <div class="navbar-btn d-sm-inline-block" id="signOut">
+                  <a
+                    class="main-btn"
+                    id="signoutlink"
+                    data-scroll-nav="0"
+                    style="display: none;"
+                  >
+                    Sign Out
                   </a>
                 </div>
               
@@ -192,7 +203,7 @@
     <i class="uil uil-times form_close"></i>
     <!-- login form -->
     <div class="form login_form">
-      <form action="#">
+      <form action="javascript:void(0)">
     <h2>Login</h2>
     <div class ="input_box">
       <input type="email" placeholder="Enter your Email" required/>
@@ -212,7 +223,7 @@
     </div>
     <button class="button">Login Now</button>
     <!-- <p>or</p> --><hr>
-    <button class="googlebutton">Continue With Google</button>
+    <div class="googleBtn googleloginbutton googlelogoutbutton" >Continue With Google</div>
     <div class="login_signup">
       Don't have an account? <a href="#" id="signup">SignUp</a>
     </div>
@@ -239,7 +250,7 @@
   
   <button class="button">SignUp Now</button>
   <div class="login_signup">
-    Already have an account? <a href="#" id="signup">Login</a>
+    Already have an account? <a href="#" id="login">Login</a>
   </div>
 </form>
 </div>
@@ -881,4 +892,89 @@
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
+
+
+ <!-- Firebase config files  -->
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import {getAuth, signOut, GoogleAuthProvider, signInWithRedirect, signInWithPopup, getRedirectResult} from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js';
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCXktaWWHVAap1xl2yDfzvokuq7h1RrJ9s",
+      authDomain: "sqlify-auth.firebaseapp.com",
+      projectId: "sqlify-auth",
+      storageBucket: "sqlify-auth.appspot.com",
+      messagingSenderId: "288226704981",
+      appId: "1:288226704981:web:86c3a3eb8e1b2b06a81edc"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = new getAuth(app);
+    const provider = new GoogleAuthProvider(app);
+
+    const googleloginbutton = document.querySelector('.googleloginbutton');
+    googleloginbutton.addEventListener('click', (e)=>{
+      
+      signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+    alert(user.displayName);
+    document.querySelector('.form_close').click();
+    document.getElementById('loginlink').style.display='none';
+    document.getElementById('signoutlink').style.display='block';
+
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    alert(errorMessage);
+    // ...
+  });
+
+    });
+
+  const signoutlink = document.getElementById('signoutlink');
+  signoutlink.addEventListener('click', (e)=>{
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      alert('Sign Out Success!!');
+      document.getElementById('loginlink').style.display='block';
+      document.getElementById('signoutlink').style.display='none';
+  // Sign-out successful.
+  }).catch((error) => {
+    // An error happened.
+    alert(error);
+  });
+  });
+
+  //On page Load
+  function onPageLoadThen(){
+    const auth = getAuth();
+    if(auth){
+      document.getElementById('loginlink').style.display='none';
+      document.getElementById('signoutlink').style.display='block';
+    }else{
+      document.getElementById('loginlink').style.display='block';
+      document.getElementById('signoutlink').style.display='none';
+    }
+  }
+  onPageLoadThen();
+  </script>
+
 </html>
