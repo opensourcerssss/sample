@@ -1,985 +1,1097 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
+	<head>
+		<meta charset="utf-8" />
 
-    <!--====== Title ======-->
-    <title>Sqlify Ai</title>
+		<!--====== Title ======-->
+		<title>Sqlify Ai</title>
 
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--====== Favicon Icon ======-->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.png"
-      type="image/png"
-    />
+		<!--====== Favicon Icon ======-->
+		<link
+			rel="shortcut icon"
+			href="assets/images/favicon.png"
+			type="image/png"
+		/>
 
-    <!--====== CSS Files LinkUp ======-->
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/lineIcons.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel ="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-  </head>
+		<!--====== CSS Files LinkUp ======-->
+		<link rel="stylesheet" href="assets/css/animate.css" />
+		<link rel="stylesheet" href="assets/css/glightbox.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+		/>
+	</head>
 
-  <body>
-    <!--[if IE]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
+	<body>
+		<!--[if IE]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="https://browsehappy.com/">upgrade your browser</a> to improve
+				your experience and security.
+			</p>
+		<![endif]-->
 
-    <!--====== PRELOADER PART START ======-->
-    <div class="preloader">
-      <div class="loader">
-        <div class="spinner">
-          <div class="spinner-container">
-            <div class="spinner-rotator">
-              <div class="spinner-left">
-                <div class="spinner-circle"></div>
-              </div>
-              <div class="spinner-right">
-                <div class="spinner-circle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--====== PRELOADER PART ENDS ======-->
+		<!--====== PRELOADER PART START ======-->
+		<div class="preloader">
+			<div class="loader">
+				<div class="spinner">
+					<div class="spinner-container">
+						<div class="spinner-rotator">
+							<div class="spinner-left">
+								<div class="spinner-circle"></div>
+							</div>
+							<div class="spinner-right">
+								<div class="spinner-circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--====== PRELOADER PART ENDS ======-->
 
-    <!--====== HEADER PART START ======-->
-    <header class="header-area">
-      <div class="navbar-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
-                  <img src="assets/images/logo/sqlify-1.png" alt="Logo" />
-                </a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="toggler-icon"> </span>
-                  <span class="toggler-icon"> </span>
-                  <span class="toggler-icon"> </span>
-                </button>
+		<!--====== HEADER PART START ======-->
+		<header class="header-area">
+			<div class="navbar-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<nav class="navbar navbar-expand-lg">
+								<a class="navbar-brand" href="index.html">
+									<img src="assets/images/logo/sqlify-1.png" alt="Logo" />
+								</a>
+								<button
+									class="navbar-toggler"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span class="toggler-icon"> </span>
+									<span class="toggler-icon"> </span>
+									<span class="toggler-icon"> </span>
+								</button>
 
-                <div
-                  class="collapse navbar-collapse sub-menu-bar"
-                  id="navbarSupportedContent"
-                >
-                  <ul id="nav" class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <a class="page-scroll active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#facts">Why</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- navbar collapse -->
+								<div
+									class="collapse navbar-collapse sub-menu-bar"
+									id="navbarSupportedContent"
+								>
+									<ul id="nav" class="navbar-nav ms-auto">
+										<li class="nav-item">
+											<a class="page-scroll active" href="#home">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="page-scroll" href="#features">Features</a>
+										</li>
+										<li class="nav-item">
+											<a class="page-scroll" href="#about">About</a>
+										</li>
+										<li class="nav-item">
+											<a class="page-scroll" href="#facts">Why</a>
+										</li>
+										<li class="nav-item">
+											<a class="page-scroll" href="#team">Team</a>
+										</li>
+									</ul>
+								</div>
+								<!-- navbar collapse -->
 
-               <div class="navbar-btn d-sm-inline-block" id="form-open">
-                  <a
-                    class="main-btn"
-                    id="loginlink"
-                    data-scroll-nav="0"
-                  >
-                    Login
-                  </a>
-                </div>
-               <div class="navbar-btn d-sm-inline-block" id="signOut">
-                  <a
-                    class="main-btn"
-                    id="signoutlink"
-                    data-scroll-nav="0"
-                    style="display: none;"
-                  >
-                    Sign Out
-                  </a>
-                </div>
-              
-                
-              </nav>
-              <!-- navbar -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- container -->
-      </div>
-      <!-- navbar area -->
+								<div class="navbar-btn d-sm-inline-block" id="form-open">
+									<a class="main-btn" id="loginlink" data-scroll-nav="0">
+										Login
+									</a>
+								</div>
+								<div class="navbar-btn d-sm-inline-block" id="signOut">
+									<a
+										class="main-btn"
+										id="signoutlink"
+										data-scroll-nav="0"
+										style="display: none"
+									>
+										Sign Out
+									</a>
+								</div>
+							</nav>
+							<!-- navbar -->
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- navbar area -->
 
-      <div
-        id="home"
-        class="header-hero bg_cover"
-        style="background-image: url(assets/images/header/banner-bg.svg)"
-      >
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="header-hero-content text-center">
-                <h3
-                  class="header-sub-title wow fadeInUp"
-                  data-wow-duration="1.3s"
-                  data-wow-delay="0.2s"
-                >
-                Sqlify - Ai 
-                </h3>
-                <h2
-                  class="header-title wow fadeInUp"
-                  data-wow-duration="1.3s"
-                  data-wow-delay="0.5s"
-                >
-                  Translate natural language to Sql Queries
-                </h2>
-                <p
-                  class="text wow fadeInUp"
-                  data-wow-duration="1.3s"
-                  data-wow-delay="0.8s"
-                >
-                  Simplifying data extraction with effortless Natural language to Sql translation
-                </p>
-                <a
-                  href="/sqlTranslator.html"
-                  class="main-btn wow fadeInUp"
-                  data-wow-duration="1.3s"
-                  data-wow-delay="1.1s"
-                >
-                  Get Started
-                </a>
-              </div>
-              <!-- header hero content -->
-            </div>
-          </div>
-          <!-- row -->
-          <div class="row">
-            <div class="col-lg-12">
-              <div
-                class="header-hero-image text-center wow fadeIn"
-                data-wow-duration="1.3s"
-                data-wow-delay="1.4s"
-              >
-                <img src="assets/images/header/headerSe.svg" alt="hero" />
-              </div>
-              <!-- header hero image -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- container -->
-        <div id="particles-1" class="particles"></div>
-      </div>
-      <!-- header hero -->
-    </header>
-    <!--====== HEADER PART ENDS ======-->
+			<div
+				id="home"
+				class="header-hero bg_cover"
+				style="background-image: url(assets/images/header/banner-bg.svg)"
+			>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="header-hero-content text-center">
+								<h3
+									class="header-sub-title wow fadeInUp"
+									data-wow-duration="1.3s"
+									data-wow-delay="0.2s"
+								>
+									Sqlify - Ai
+								</h3>
+								<h2
+									class="header-title wow fadeInUp"
+									data-wow-duration="1.3s"
+									data-wow-delay="0.5s"
+								>
+									Translate natural language to Sql Queries
+								</h2>
+								<p
+									class="text wow fadeInUp"
+									data-wow-duration="1.3s"
+									data-wow-delay="0.8s"
+								>
+									Simplifying data extraction with effortless Natural language
+									to Sql translation
+								</p>
+								<a
+									href="/sqlTranslator.html"
+									class="main-btn wow fadeInUp"
+									data-wow-duration="1.3s"
+									data-wow-delay="1.1s"
+								>
+									Get Started
+								</a>
+							</div>
+							<!-- header hero content -->
+						</div>
+					</div>
+					<!-- row -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div
+								class="header-hero-image text-center wow fadeIn"
+								data-wow-duration="1.3s"
+								data-wow-delay="1.4s"
+							>
+								<img src="assets/images/header/headerSe.svg" alt="hero" />
+							</div>
+							<!-- header hero image -->
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+				<div id="particles-1" class="particles"></div>
+			</div>
+			<!-- header hero -->
+		</header>
+		<!--====== HEADER PART ENDS ======-->
 
+		<section class="home">
+			<div class="form-container">
+				<i class="uil uil-times form_close"></i>
+				<!-- login form -->
+				<div class="form login_form">
+					<form action="javascript:void(0)">
+						<h2>Login</h2>
+						<div class="input_box">
+							<input type="email" placeholder="Enter your Email" required />
+							<i class="uil uil-envelope-alt email"></i>
+						</div>
+						<div class="input_box">
+							<input
+								type="password"
+								placeholder="Enter your password"
+								required
+							/>
+							<i class="uil uil-lock password"></i>
+							<i class="uil uil-eye-slash pw_hide"></i>
+						</div>
+						<div class="option_field">
+							<span class="checkbox">
+								<input type="checkbox" id="check" />
+								<label for="check">Remember me</label>
+							</span>
+							<a href="#" class="forgot_pw">Forget password?</a>
+						</div>
+						<button class="button">Login Now</button>
+						<!-- <p>or</p> -->
+						<hr />
+						<div class="googleBtn googleloginbutton googlelogoutbutton">
+							Continue With Google
+						</div>
+						<div class="login_signup">
+							Don't have an account? <a href="#" id="signup">SignUp</a>
+						</div>
+					</form>
+				</div>
+				<!--signUP-->
+				<div class="form signup_form">
+					<form action="#">
+						<h2>Signup</h2>
+						<div class="input_box">
+							<input type="email" placeholder="Enter your Email" required />
+							<i class="uil uil-envelope-alt email"></i>
+						</div>
+						<div class="input_box">
+							<input type="password" placeholder="Create password" required />
+							<i class="uil uil-lock password"></i>
+							<i class="uil uil-eye-slash pw_hide"></i>
+						</div>
+						<div class="input_box">
+							<input type="password" placeholder="Confirm password" required />
+							<i class="uil uil-lock password"></i>
+							<i class="uil uil-eye-slash pw_hide"></i>
+						</div>
 
-<section class="home">
-  <div class="form-container">
-    <i class="uil uil-times form_close"></i>
-    <!-- login form -->
-    <div class="form login_form">
-      <form action="javascript:void(0)">
-    <h2>Login</h2>
-    <div class ="input_box">
-      <input type="email" placeholder="Enter your Email" required/>
-      <i class="uil uil-envelope-alt email"></i>
-    </div>
-    <div class ="input_box">
-      <input type="password" placeholder="Enter your password" required/>
-      <i class="uil uil-lock password"></i>
-      <i class="uil uil-eye-slash pw_hide"></i>
-    </div>
-    <div class="option_field">
-      <span class="checkbox">
-        <input type="checkbox" id="check">
-        <label for="check">Remember me</label>
-      </span>
-      <a href="#" class="forgot_pw">Forget password?</a>
-    </div>
-    <button class="button">Login Now</button>
-    <!-- <p>or</p> --><hr>
-    <div class="googleBtn googleloginbutton googlelogoutbutton" >Continue With Google</div>
-    <div class="login_signup">
-      Don't have an account? <a href="#" id="signup">SignUp</a>
-    </div>
-  </form>
-  </div>
-  <!--signUP-->
-  <div class="form signup_form">
-    <form action="#">
-  <h2>Signup</h2>
-  <div class ="input_box">
-    <input type="email" placeholder="Enter your Email" required/>
-    <i class="uil uil-envelope-alt email"></i>
-  </div>
-  <div class ="input_box">
-    <input type="password" placeholder="Create password" required/>
-    <i class="uil uil-lock password"></i>
-    <i class="uil uil-eye-slash pw_hide"></i>
-  </div>
-  <div class ="input_box">
-    <input type="password" placeholder="Confirm password" required/>
-    <i class="uil uil-lock password"></i>
-    <i class="uil uil-eye-slash pw_hide"></i>
-  </div>
-  
-  <button class="button">SignUp Now</button>
-  <div class="login_signup">
-    Already have an account? <a href="#" id="login">Login</a>
-  </div>
-</form>
-</div>
-  </div>
-</section>
-    <!--====== SERVICES PART START ======-->
-    <section id="features" class="services-area pt-120">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="section-title text-center pb-40">
-              <div class="line m-auto"></div>
-              <h3 class="title">
-                Clean and simple design,
-                <span> Showcasing our starred features you need to get started!</span>
-              </h3>
-            </div>
-            <!-- section title -->
-          </div>
-        </div>
-        <!-- row -->
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-7 col-sm-8">
-            <div
-              class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.2s"
-            >
-              <div class="services-icon">
-                <img
-                  class="shape"
-                  src="assets/images/services/services-shape.svg"
-                  alt="shape"
-                />
-                <img
-                  class="shape-1"
-                  src="assets/images/services/services-shape-1.svg"
-                  alt="shape"
-                />
-                <i class="lni lni-spellcheck"> </i>
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">Multilingual</a>
-                </h4>
-                <p class="text">
-                  Our ChatBot comes with Multilingual support where you can
-                  provide prompt in any language and the answer will be answered as per input language.
-                </p>
-               
-              </div>
-            </div>
-            <!-- single services -->
-          </div>
-          <div class="col-lg-4 col-md-7 col-sm-8">
-            <div
-              class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <div class="services-icon">
-                <img
-                  class="shape"
-                  src="assets/images/services/services-shape.svg"
-                  alt="shape"
-                />
-                <img
-                  class="shape-1"
-                  src="assets/images/services/services-shape-2.svg"
-                  alt="shape"
-                />
-                <i class="lni lni-friendly"></i>
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">Advanced Sql</a>
-                </h4>
-                <p class="text">
-                  With intelligent algorithms and syntax parsing, it generates SQL queries 
-                  that are highly efficient, and compatible with popular database systems.
+						<button class="button">SignUp Now</button>
+						<div class="login_signup">
+							Already have an account? <a href="#" id="login">Login</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!--====== SERVICES PART START ======-->
+		<section id="features" class="services-area pt-120">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="section-title text-center pb-40">
+							<div class="line m-auto"></div>
+							<h3 class="title">
+								Clean and simple design,
+								<span>
+									Showcasing our starred features you need to get started!</span
+								>
+							</h3>
+						</div>
+						<!-- section title -->
+					</div>
+				</div>
+				<!-- row -->
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-7 col-sm-8">
+						<div
+							class="single-services text-center mt-30 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.2s"
+						>
+							<div class="services-icon">
+								<img
+									class="shape"
+									src="assets/images/services/services-shape.svg"
+									alt="shape"
+								/>
+								<img
+									class="shape-1"
+									src="assets/images/services/services-shape-1.svg"
+									alt="shape"
+								/>
+								<i class="lni lni-spellcheck"> </i>
+							</div>
+							<div class="services-content mt-30">
+								<h4 class="services-title">
+									<a href="javascript:void(0)">Multilingual</a>
+								</h4>
+								<p class="text">
+									Our ChatBot comes with Multilingual support where you can
+									provide prompt in any language and the answer will be answered
+									as per input language.
+								</p>
+							</div>
+						</div>
+						<!-- single services -->
+					</div>
+					<div class="col-lg-4 col-md-7 col-sm-8">
+						<div
+							class="single-services text-center mt-30 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.5s"
+						>
+							<div class="services-icon">
+								<img
+									class="shape"
+									src="assets/images/services/services-shape.svg"
+									alt="shape"
+								/>
+								<img
+									class="shape-1"
+									src="assets/images/services/services-shape-2.svg"
+									alt="shape"
+								/>
+								<i class="lni lni-friendly"></i>
+							</div>
+							<div class="services-content mt-30">
+								<h4 class="services-title">
+									<a href="javascript:void(0)">Advanced Sql</a>
+								</h4>
+								<p class="text">
+									With intelligent algorithms and syntax parsing, it generates
+									SQL queries that are highly efficient, and compatible with
+									popular database systems.
+								</p>
+							</div>
+						</div>
+						<!-- single services -->
+					</div>
+					<div class="col-lg-4 col-md-7 col-sm-8">
+						<div
+							class="single-services text-center mt-30 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.8s"
+						>
+							<div class="services-icon">
+								<img
+									class="shape"
+									src="assets/images/services/services-shape.svg"
+									alt="shape"
+								/>
+								<img
+									class="shape-1"
+									src="assets/images/services/services-shape-3.svg"
+									alt="shape"
+								/>
+								<i class="lni lni-keyboard"> </i>
+							</div>
+							<div class="services-content mt-30">
+								<h4 class="services-title">
+									<a href="javascript:void(0)">N L Input</a>
+								</h4>
+								<p class="text">
+									Our tool offers a user-friendly interface that allows you to
+									input queries in plain English, making it accessible to users
+									of all technical backgrounds.
+								</p>
+							</div>
+						</div>
+						<!-- single services -->
+					</div>
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</section>
+		<!--====== SERVICES PART ENDS ======-->
 
-                </p>
-              
-              </div>
-            </div>
-            <!-- single services -->
-          </div>
-          <div class="col-lg-4 col-md-7 col-sm-8">
-            <div
-              class="single-services text-center mt-30 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.8s"
-            >
-              <div class="services-icon">
-                <img
-                  class="shape"
-                  src="assets/images/services/services-shape.svg"
-                  alt="shape"
-                />
-                <img
-                  class="shape-1"
-                  src="assets/images/services/services-shape-3.svg"
-                  alt="shape"
-                />
-                <i class="lni lni-keyboard"> </i>
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">N L Input</a>
-                </h4>
-                <p class="text">
-                  Our tool offers a user-friendly interface that allows you to input queries 
-                  in plain English, making it accessible to users of all technical backgrounds.
+		<section id="about">
+			<!--====== ABOUT PART START ======-->
+			<div class="about-area pt-70">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div
+								class="about-content mt-50 wow fadeInLeftBig"
+								data-wow-duration="1s"
+								data-wow-delay="0.5s"
+							>
+								<div class="section-title">
+									<div class="line"></div>
+									<h3 class="title">
+										Welcome to Our
+										<span>Natural Language to SQL Translator</span>
+									</h3>
+								</div>
+								<!-- section title -->
+								<p class="text">
+									🌐 Welcome to Sqlify! We specialize in Natural Language to SQL
+									Translation, simplifying database interactions.<br />
+									🧠 <b>Transform</b> complexity into simplicity with our
+									user-friendly tool, designed for all skill levels.<br />
+									🚀 <b>Instantly</b> craft accurate SQL queries from everyday
+									language, speeding up data access.<br />
+									🌟 <b>Trusted</b> by professionals worldwide for its precision
+									and efficiency.<br />
+									🔐 We <b>prioritize</b> data security, ensuring your
+									information is handled with care.<br />
+									🤝 <b>Join us</b> on our mission to make data-driven decisions
+									accessible to all.<br />
+								</p>
+								<a
+									target="_blank"
+									href="/free-lite/sqlTranslator.html"
+									class="main-btn"
+									>Try it Free</a
+								>
+							</div>
+							<!-- about content -->
+						</div>
+						<div class="col-lg-6">
+							<div
+								class="about-image text-center mt-50 wow fadeInRightBig"
+								data-wow-duration="1s"
+								data-wow-delay="0.5s"
+							>
+								<img src="assets/images/about/webdesigner.svg" alt="about" />
+							</div>
+							<!-- about image -->
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+				<div class="about-shape-1">
+					<img src="assets/images/about/about-shape-1.svg" alt="shape" />
+				</div>
+			</div>
+			<!--====== ABOUT PART ENDS ======-->
 
-                </p>
-            
-              </div>
-            </div>
-            <!-- single services -->
-          </div>
-        </div>
-        <!-- row -->
-      </div>
-      <!-- container -->
-    </section>
-    <!--====== SERVICES PART ENDS ======-->
+			<!--====== ABOUT PART START ======-->
+			<div class="about-area pt-70">
+				<div class="about-shape-2">
+					<img src="assets/images/about/about-shape-2.svg" alt="shape" />
+				</div>
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 order-lg-last">
+							<div
+								class="about-content ms-lg-auto mt-50 wow fadeInLeftBig"
+								data-wow-duration="1s"
+								data-wow-delay="0.5s"
+							>
+								<div class="section-title">
+									<div class="line"></div>
+									<h3 class="title">
+										Smart ChatBot <span> with Essential Features</span>
+									</h3>
+								</div>
+								<!-- section title -->
+								<p class="text">
+									Seamlessly converse with our Chatbot, and watch as it
+									generates SQL queries based on your natural language input.
+									Our chat bot supports multiple languages, with Speech to Text
+									integrity.<br />
+									💡 What sets us apart? Our Chatbot doesn't just generate SQL
+									queries; it explains them too! You'll understand the logic
+									behind the code, empowering you to make informed data-driven
+									decisions.
+								</p>
+								<a href="/free-lite/sqlTranslator.html" class="main-btn"
+									>Let's Chat</a
+								>
+							</div>
+							<!-- about content -->
+						</div>
+						<div class="col-lg-6 order-lg-first">
+							<div
+								class="about-image text-center mt-50 wow fadeInRightBig"
+								data-wow-duration="1s"
+								data-wow-delay="0.5s"
+							>
+								<img
+									src="assets/images/about/virtual-assistant.svg"
+									alt="about"
+								/>
+							</div>
+							<!-- about image -->
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!--====== ABOUT PART ENDS ======-->
 
-    <section id="about">
-      <!--====== ABOUT PART START ======-->
-      <div class="about-area pt-70">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div
-                class="about-content mt-50 wow fadeInLeftBig"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <div class="section-title">
-                  <div class="line"></div>
-                  <h3 class="title">
-                    Welcome to Our <span>Natural Language to SQL Translator</span>
-                  </h3>
-                </div>
-                <!-- section title -->
-                <p class="text">
-                  🌐 Welcome to Sqlify! We specialize in Natural Language to SQL Translation, simplifying database interactions.<br>
-                  🧠 <b>Transform</b> complexity into simplicity with our user-friendly tool, designed for all skill levels.<br>
-                  🚀 <b>Instantly</b> craft accurate SQL queries from everyday language, speeding up data access.<br>
-                  🌟 <b>Trusted</b> by professionals worldwide for its precision and efficiency.<br>
-                  🔐 We <b>prioritize</b> data security, ensuring your information is handled with care.<br>
-                  🤝 <b>Join us</b> on our mission to make data-driven decisions accessible to all.<br>
-                </p>
-                <a target="_blank" href="/free-lite/sqlTranslator.html" class="main-btn">Try it Free</a>
-              </div>
-              <!-- about content -->
-            </div>
-            <div class="col-lg-6">
-              <div
-                class="about-image text-center mt-50 wow fadeInRightBig"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <img src="assets/images/about/webdesigner.svg" alt="about" />
-              </div>
-              <!-- about image -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- container -->
-        <div class="about-shape-1">
-          <img src="assets/images/about/about-shape-1.svg" alt="shape" />
-        </div>
-      </div>
-      <!--====== ABOUT PART ENDS ======-->
+			<!--====== ABOUT PART START ======-->
+			<div class="about-area pt-70">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div
+								class="about-content mt-50 wow fadeInLeftBig"
+								data-wow-duration="1s"
+								data-wow-delay="0.5s"
+							>
+								<div class="section-title">
+									<div class="line"></div>
+									<h3 class="title">
+										<span>Playgroung to</span> Play with Sql Code
+									</h3>
+								</div>
+								<!-- section title -->
+								<p class="text">
+									Looking to dive into your data, experiment with queries, and
+									uncover valuable insights? Welcome to our SQL Playground,
+									where data exploration is at your fingertips.<br /><br />
+									Simply input your SQL queries, and watch as our intuitive
+									platform runs them in real-time. Whether you're an experienced
+									data analyst or just starting your SQL journey, our Playground
+									is your go-to tool for interactive data manipulation.
+								</p>
+								<a
+									target="_blank"
+									href="https://sqlplay-ufv96nxc42zkjj7jeqtzq3.streamlit.app/"
+									class="main-btn"
+									>Try it Free</a
+								>
+							</div>
+							<!-- about content -->
+						</div>
+						<div class="col-lg-6">
+							<div
+								class="about-image text-center mt-50 wow fadeInRightBig"
+								data-wow-duration="1s"
+								data-wow-delay="0.5s"
+							>
+								<img
+									src="assets/images/about/software-engineer.svg"
+									alt="about"
+								/>
+							</div>
+							<!-- about image -->
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+				<div class="about-shape-1">
+					<img src="assets/images/about/about-shape-1.svg" alt="shape" />
+				</div>
+			</div>
+			<!--====== ABOUT PART ENDS ======-->
+		</section>
 
-      <!--====== ABOUT PART START ======-->
-      <div class="about-area pt-70">
-        <div class="about-shape-2">
-          <img src="assets/images/about/about-shape-2.svg" alt="shape" />
-        </div>
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-last">
-              <div
-                class="about-content ms-lg-auto mt-50 wow fadeInLeftBig"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <div class="section-title">
-                  <div class="line"></div>
-                  <h3 class="title">
-                    Smart ChatBot <span> with Essential Features</span>
-                  </h3>
-                </div>
-                <!-- section title -->
-                <p class="text">
-                  Seamlessly converse with our Chatbot, and watch as it generates SQL 
-                  queries based on your natural language input. Our chat bot supports multiple languages, with Speech to Text integrity.<br>
-                💡 What sets us apart? Our Chatbot doesn't just generate SQL queries; it 
-                  explains them too! You'll understand the logic behind the code, 
-                  empowering you to make informed data-driven decisions.
-                </p>
-                <a href="/free-lite/sqlTranslator.html" class="main-btn">Let's Chat</a>
-              </div>
-              <!-- about content -->
-            </div>
-            <div class="col-lg-6 order-lg-first">
-              <div
-                class="about-image text-center mt-50 wow fadeInRightBig"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <img src="assets/images/about/virtual-assistant.svg" alt="about" />
-              </div>
-              <!-- about image -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- container -->
-      </div>
-      <!--====== ABOUT PART ENDS ======-->
+		<!--====== VIDEO COUNTER PART START ======-->
+		<section id="facts" class="video-counter pt-70">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 order-lg-last">
+						<div
+							class="counter-wrapper mt-50 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.8s"
+						>
+							<div class="counter-content">
+								<div class="section-title">
+									<div class="line"></div>
+									<h3 class="title">Cool facts <span> about Sqlify</span></h3>
+								</div>
+								<!-- section title -->
+								<p class="text">
+									<b>Sqlify</b> comes with High precision model of Ml. We have
+									dataset of 50k+ values trained according users query. Here are
+									some more cool facts about us.
+								</p>
+							</div>
+							<!-- counter content -->
+							<div class="row no-gutters">
+								<div class="col-4">
+									<div
+										class="single-counter counter-color-1 d-flex align-items-center justify-content-center"
+									>
+										<div class="counter-items text-center">
+											<span
+												class="count countup text-uppercase"
+												cup-end="88"
+											></span>
 
-      <!--====== ABOUT PART START ======-->
-      <div class="about-area pt-70">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div
-                class="about-content mt-50 wow fadeInLeftBig"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <div class="section-title">
-                  <div class="line"></div>
-                  <h3 class="title">
-                    <span>Playgroung to</span> Play with Sql Code
-                  </h3>
-                </div>
-                <!-- section title -->
-                <p class="text">
-                  Looking to dive into your data, experiment with queries, and uncover valuable insights?
-                  Welcome to our SQL Playground, where data exploration is at your fingertips.<br><br>
-                  Simply input your SQL queries, and watch as our intuitive 
-                  platform runs them in real-time. Whether you're an experienced data 
-                  analyst or just starting your SQL journey, our Playground is your go-to 
-                  tool for interactive data manipulation.
-                </p>
-                <a target="_blank" href="https://sqlplay-ufv96nxc42zkjj7jeqtzq3.streamlit.app/" class="main-btn">Try it Free</a>
-              </div>
-              <!-- about content -->
-            </div>
-            <div class="col-lg-6">
-              <div
-                class="about-image text-center mt-50 wow fadeInRightBig"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <img src="assets/images/about/software-engineer.svg" alt="about" />
-              </div>
-              <!-- about image -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- container -->
-        <div class="about-shape-1">
-          <img src="assets/images/about/about-shape-1.svg" alt="shape" />
-        </div>
-      </div>
-      <!--====== ABOUT PART ENDS ======-->
-    </section>
+											<p class="text">Accuracy (%)</p>
+										</div>
+									</div>
+									<!-- single counter -->
+								</div>
+								<div class="col-4">
+									<div
+										class="single-counter counter-color-2 d-flex align-items-center justify-content-center"
+									>
+										<div class="counter-items text-center">
+											<span
+												class="count countup text-uppercase"
+												cup-end="100"
+											></span>
+											<p class="text">Verified Users</p>
+										</div>
+									</div>
+									<!-- single counter -->
+								</div>
+								<div class="col-4">
+									<div
+										class="single-counter counter-color-3 d-flex align-items-center justify-content-center"
+									>
+										<div class="counter-items text-center">
+											<span
+												class="count countup text-uppercase"
+												cup-end="59"
+											></span>
+											<p class="text">Feedbacks</p>
+										</div>
+									</div>
+									<!-- single counter -->
+								</div>
+							</div>
+							<!-- row -->
+						</div>
+						<!-- counter wrapper -->
+					</div>
+					<div class="col-lg-6">
+						<div
+							class="video-content mt-50 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.5s"
+						>
+							<img class="dots" src="assets/images/video/dots.svg" alt="dots" />
+							<div class="video-wrapper">
+								<div class="video-image">
+									<img src="assets/images/video/video.png" alt="video" />
+								</div>
+								<div class="video-icon">
+									<a
+										href="https://www.youtube.com/watch?v=r44RKWyfcFw"
+										class="video-popup glightbox"
+									>
+										<i class="lni lni-play"> </i>
+									</a>
+								</div>
+							</div>
+							<!-- video wrapper -->
+						</div>
+						<!-- video content -->
+					</div>
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</section>
+		<!--====== VIDEO COUNTER PART ENDS ======-->
 
-    <!--====== VIDEO COUNTER PART START ======-->
-    <section id="facts" class="video-counter pt-70">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 order-lg-last">
-            <div
-              class="counter-wrapper mt-50 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.8s"
-            >
-              <div class="counter-content">
-                <div class="section-title">
-                  <div class="line"></div>
-                  <h3 class="title">Cool facts <span> about Sqlify</span></h3>
-                </div>
-                <!-- section title -->
-                <p class="text">
-                  <b>Sqlify</b> comes with High precision model of Ml. We have dataset of 50k+ values trained
-                  according users query. Here are some more cool facts about us.
-                </p>
-              </div>
-              <!-- counter content -->
-              <div class="row no-gutters">
-                <div class="col-4">
-                  <div
-                    class="
-                      single-counter
-                      counter-color-1
-                      d-flex
-                      align-items-center
-                      justify-content-center
-                    "
-                  >
-                    <div class="counter-items text-center">
-                      <span
-                        class="count countup text-uppercase"
-                        cup-end="88"
-                      ></span>
+		<section id="team" class="services-area pt-120">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="section-title text-center pb-40">
+							<div class="line m-auto"></div>
+							<h3 class="title">
+								Our Team and developers,
+								<span> Comes with everything you need to get started!</span>
+							</h3>
+						</div>
+						<!-- section title -->
+					</div>
+				</div>
+				<!-- row -->
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-7 col-sm-8">
+						<div
+							class="single-services text-center mt-30 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.2s"
+							style="
+								visibility: visible;
+								animation-duration: 1s;
+								animation-delay: 0.2s;
+								animation-name: fadeIn;
+							"
+						>
+							<div class="services-icon">
+								<img
+									class="shape"
+									src="assets/images/services/services-shape.svg"
+									alt="shape"
+								/>
+								<img
+									class="shape-1"
+									src="assets/images/services/services-shape-1.svg"
+									alt="shape"
+								/>
+								<i class="fa-solid fa-laptop-code"></i>
+							</div>
+							<div class="services-content mt-30">
+								<h4 class="services-title">
+									<a href="javascript:void(0)">Prasad</a>
+								</h4>
+								<p class="text">
+									I am Full stack developer. I designed backend and frontend of
+									Sqlify.
+								</p>
+								<a
+									class="more"
+									target="blank"
+									href="https://github.com/prasad-chavan1"
+									>View Github <i class="lni lni-chevron-right"> </i>
+								</a>
+							</div>
+						</div>
+						<!-- single services -->
+					</div>
+					<div class="col-lg-4 col-md-7 col-sm-8">
+						<div
+							class="single-services text-center mt-30 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.5s"
+							style="
+								visibility: visible;
+								animation-duration: 1s;
+								animation-delay: 0.5s;
+								animation-name: fadeIn;
+							"
+						>
+							<div class="services-icon">
+								<img
+									class="shape"
+									src="assets/images/services/services-shape.svg"
+									alt="shape"
+								/>
+								<img
+									class="shape-1"
+									src="assets/images/services/services-shape-2.svg"
+									alt="shape"
+								/>
+								<i class="fa-regular fa-folder"></i>
+							</div>
+							<div class="services-content mt-30">
+								<h4 class="services-title">
+									<a href="javascript:void(0)">Sneha</a>
+								</h4>
+								<p class="text">
+									Hey Sneha here..I contibuted by designing DB schema and docs
+									for Sqlify.
+								</p>
+								<a
+									class="more"
+									target="blank"
+									href="https://github.com/prasad-chavan1"
+									>View Github <i class="lni lni-chevron-right"> </i>
+								</a>
+							</div>
+						</div>
+						<!-- single services -->
+					</div>
+					<div class="col-lg-4 col-md-7 col-sm-8">
+						<div
+							class="single-services text-center mt-30 wow fadeIn"
+							data-wow-duration="1s"
+							data-wow-delay="0.8s"
+							style="
+								visibility: visible;
+								animation-duration: 1s;
+								animation-delay: 0.8s;
+								animation-name: fadeIn;
+							"
+						>
+							<div class="services-icon">
+								<img
+									class="shape"
+									src="assets/images/services/services-shape.svg"
+									alt="shape"
+								/>
+								<img
+									class="shape-1"
+									src="assets/images/services/services-shape-3.svg"
+									alt="shape"
+								/>
+								<i class="fa-solid fa-brain"></i>
+							</div>
+							<div class="services-content mt-30">
+								<h4 class="services-title">
+									<a href="javascript:void(0)">Mansi</a>
+								</h4>
+								<p class="text">
+									Contributed in collecting Data and training models to predict
+									accurate results.
+								</p>
+								<a
+									class="more"
+									target="blank"
+									href="https://github.com/prasad-chavan1"
+									>View Github <i class="lni lni-chevron-right"> </i>
+								</a>
+							</div>
+						</div>
+						<!-- single services -->
+					</div>
+				</div>
+				<!-- row -->
+			</div>
 
-                      <p class="text">Accuracy (%)</p>
-                    </div>
-                  </div>
-                  <!-- single counter -->
-                </div>
-                <div class="col-4">
-                  <div
-                    class="
-                      single-counter
-                      counter-color-2
-                      d-flex
-                      align-items-center
-                      justify-content-center
-                    "
-                  >
-                    <div class="counter-items text-center">
-                      <span
-                        class="count countup text-uppercase"
-                        cup-end="100"
-                      ></span>
-                      <p class="text">Verified Users</p>
-                    </div>
-                  </div>
-                  <!-- single counter -->
-                </div>
-                <div class="col-4">
-                  <div
-                    class="
-                      single-counter
-                      counter-color-3
-                      d-flex
-                      align-items-center
-                      justify-content-center
-                    "
-                  >
-                    <div class="counter-items text-center">
-                      <span
-                        class="count countup text-uppercase"
-                        cup-end="59"
-                      ></span>
-                      <p class="text">Feedbacks</p>
-                    </div>
-                  </div>
-                  <!-- single counter -->
-                </div>
-              </div>
-              <!-- row -->
-            </div>
-            <!-- counter wrapper -->
-          </div>
-          <div class="col-lg-6">
-            <div
-              class="video-content mt-50 wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <img class="dots" src="assets/images/video/dots.svg" alt="dots" />
-              <div class="video-wrapper">
-                <div class="video-image">
-                  <img src="assets/images/video/video.png" alt="video" />
-                </div>
-                <div class="video-icon">
-                  <a
-                    href="https://www.youtube.com/watch?v=r44RKWyfcFw"
-                    class="video-popup glightbox"
-                  >
-                    <i class="lni lni-play"> </i>
-                  </a>
-                </div>
-              </div>
-              <!-- video wrapper -->
-            </div>
-            <!-- video content -->
-          </div>
-        </div>
-        <!-- row -->
-      </div>
-      <!-- container -->
-    </section>
-    <!--====== VIDEO COUNTER PART ENDS ======-->
+			<!-- container -->
+		</section>
 
-    <section id="team" class="services-area pt-120">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="section-title text-center pb-40">
-              <div class="line m-auto"></div>
-              <h3 class="title">
-                Our Team and developers,
-                <span> Comes with everything you need to get started!</span>
-              </h3>
-            </div>
-            <!-- section title -->
-          </div>
-        </div>
-        <!-- row -->
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-7 col-sm-8">
-            <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeIn;">
-              <div class="services-icon">
-                <img class="shape" src="assets/images/services/services-shape.svg" alt="shape">
-                <img class="shape-1" src="assets/images/services/services-shape-1.svg" alt="shape">
-                <i class="fa-solid fa-laptop-code"></i>
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">Prasad</a>
-                </h4>
-                <p class="text">
-                  I am Full stack developer. I designed backend and frontend of Sqlify.
-                </p>
-                <a class="more" target="blank" href="https://github.com/prasad-chavan1">View Github <i class="lni lni-chevron-right"> </i>
-                </a>
-              </div>
-            </div>
-            <!-- single services -->
-          </div>
-          <div class="col-lg-4 col-md-7 col-sm-8">
-            <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeIn;">
-              <div class="services-icon">
-                <img class="shape" src="assets/images/services/services-shape.svg" alt="shape">
-                <img class="shape-1" src="assets/images/services/services-shape-2.svg" alt="shape">
-                <i class="fa-regular fa-folder"></i>
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">Sneha</a>
-                </h4>
-                <p class="text">
-                  Hey Sneha here..I contibuted by designing DB schema and docs for Sqlify.
-                </p>
-                <a class="more" target="blank" href="https://github.com/prasad-chavan1">View Github <i class="lni lni-chevron-right"> </i>
-                </a>
-              </div>
-            </div>
-            <!-- single services -->
-          </div>
-          <div class="col-lg-4 col-md-7 col-sm-8">
-            <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeIn;">
-              <div class="services-icon">
-                <img class="shape" src="assets/images/services/services-shape.svg" alt="shape">
-                <img class="shape-1" src="assets/images/services/services-shape-3.svg" alt="shape">
-                <i class="fa-solid fa-brain"></i>
-              </div>
-              <div class="services-content mt-30">
-                <h4 class="services-title">
-                  <a href="javascript:void(0)">Mansi</a>
-                </h4>
-                <p class="text">
-                  Contributed in collecting Data and training models to predict accurate results.
-                </p>
-                <a class="more" target="blank" href="https://github.com/prasad-chavan1">View Github <i class="lni lni-chevron-right"> </i>
-                </a>
-              </div>
-            </div>
-            <!-- single services -->
-          </div>
-        </div>
-        <!-- row -->
-      </div>
-      
-      <!-- container -->
-    </section>
+		<!--====== FOOTER PART START ======-->
+		<footer id="footer" class="footer-area pt-120">
+			<div class="container">
+				<div
+					class="subscribe-area wow fadeIn"
+					data-wow-duration="1s"
+					data-wow-delay="0.5s"
+				>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="subscribe-content mt-45">
+								<h2 class="subscribe-title">
+									Get in Touch <span>join our whatsapp community</span>
+								</h2>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="subscribe-form mt-50">
+								<form action="#">
+									<input type="text" placeholder="Enter Whatsapp Number" />
+									<button class="main-btn">Join</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- subscribe area -->
+				<div class="footer-widget pb-100">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-8">
+							<div
+								class="footer-about mt-50 wow fadeIn"
+								data-wow-duration="1s"
+								data-wow-delay="0.2s"
+							>
+								<a class="logo" href="javascript:void(0)">
+									<img src="assets/images/logo/sqlify-1.png" alt="logo" />
+								</a>
+								<p class="text">
+									Lorem ipsum dolor sit amet consetetur sadipscing elitr,
+									sederfs diam nonumy eirmod tempor invidunt ut labore et dolore
+									magna aliquyam.
+								</p>
+								<ul class="social">
+									<li>
+										<a target="_blank" href="askokc4321@gmail.com">
+											<i class="lni lni-envelope"> </i>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://instagram.com/_thats.why_">
+											<i class="lni lni-instagram-filled"> </i>
+										</a>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											href="https://www.linkedin.com/in/prasad-chavan2003/"
+										>
+											<i class="lni lni-linkedin-original"> </i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- footer about -->
+						</div>
+						<div class="col-lg-5 col-md-7 col-sm-12">
+							<div class="footer-link d-flex mt-50 justify-content-sm-between">
+								<div
+									class="link-wrapper wow fadeIn"
+									data-wow-duration="1s"
+									data-wow-delay="0.4s"
+								>
+									<div class="footer-title">
+										<h4 class="title">Quick Link</h4>
+									</div>
+									<ul class="link">
+										<li><a href="javascript:void(0)">Road Map</a></li>
+										<li><a href="javascript:void(0)">Privacy Policy</a></li>
+										<li><a href="javascript:void(0)">Terms of Service</a></li>
+									</ul>
+								</div>
+								<!-- footer wrapper -->
+								<div
+									class="link-wrapper wow fadeIn"
+									data-wow-duration="1s"
+									data-wow-delay="0.6s"
+								>
+									<div class="footer-title">
+										<h4 class="title">Resources</h4>
+									</div>
+									<ul class="link">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="#facts">Why Sqlify?</a></li>
+										<li>
+											<a target="_blank" href="https://prasadchavan.vercel.app/"
+												>Portfolio</a
+											>
+										</li>
+										<li>
+											<a
+												target="_blank"
+												href="https://sqlplay-ufv96nxc42zkjj7jeqtzq3.streamlit.app/"
+												>Play Ground</a
+											>
+										</li>
+										<li>
+											<a href="/free-lite/sqlTranslator.html">Get Start</a>
+										</li>
+									</ul>
+								</div>
+								<!-- footer wrapper -->
+							</div>
+							<!-- footer link -->
+						</div>
+						<div class="col-lg-3 col-md-5 col-sm-12">
+							<div
+								class="footer-contact mt-50 wow fadeIn"
+								data-wow-duration="1s"
+								data-wow-delay="0.8s"
+							>
+								<div class="footer-title">
+									<h4 class="title">Contact Us</h4>
+								</div>
+								<ul class="contact">
+									<li>+91 7666128710</li>
+									<li>askokc4321@gmail.com</li>
+									<li>www.sqlify.ai</li>
+									<li>At Post. B.N 123 SSBT COET Bambhori Jalgaon, India.</li>
+								</ul>
+							</div>
+							<!-- footer contact -->
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- footer widget -->
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="copyright d-sm-flex justify-content-between">
+								<div class="copyright-content">
+									<p class="text">
+										Designed and Developed by
+										<a
+											target="_blank"
+											href="https://prasadchavan.vercel.app/"
+											rel="follow"
+											>Prasad</a
+										>
+									</p>
+								</div>
+								<!-- copyright content -->
+							</div>
+							<!-- copyright -->
+						</div>
+					</div>
+					<!-- row -->
+				</div>
+				<!-- footer copyright -->
+			</div>
+			<!-- container -->
+			<div id="particles-2"></div>
+		</footer>
+		<!--====== FOOTER PART ENDS ======-->
 
-    <!--====== FOOTER PART START ======-->
-    <footer id="footer" class="footer-area pt-120">
-      <div class="container">
-        <div
-          class="subscribe-area wow fadeIn"
-          data-wow-duration="1s"
-          data-wow-delay="0.5s"
-        >
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="subscribe-content mt-45">
-                <h2 class="subscribe-title">
-                  Get in Touch <span>join our whatsapp community</span>
-                </h2>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="subscribe-form mt-50">
-                <form action="#">
-                  <input type="text" placeholder="Enter Whatsapp Number" />
-                  <button class="main-btn">Join</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- subscribe area -->
-        <div class="footer-widget pb-100">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-8">
-              <div
-                class="footer-about mt-50 wow fadeIn"
-                data-wow-duration="1s"
-                data-wow-delay="0.2s"
-              >
-                <a class="logo" href="javascript:void(0)">
-                  <img src="assets/images/logo/sqlify-1.png" alt="logo" />
-                </a>
-                <p class="text">
-                  Lorem ipsum dolor sit amet consetetur sadipscing elitr,
-                  sederfs diam nonumy eirmod tempor invidunt ut labore et dolore
-                  magna aliquyam.
-                </p>
-                <ul class="social">
-                  <li>
-                    <a target="_blank" href="askokc4321@gmail.com">
-                      <i class="lni lni-envelope"> </i>
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="https://instagram.com/_thats.why_">
-                      <i class="lni lni-instagram-filled"> </i>
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/prasad-chavan2003/">
-                      <i class="lni lni-linkedin-original"> </i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- footer about -->
-            </div>
-            <div class="col-lg-5 col-md-7 col-sm-12">
-              <div class="footer-link d-flex mt-50 justify-content-sm-between">
-                <div
-                  class="link-wrapper wow fadeIn"
-                  data-wow-duration="1s"
-                  data-wow-delay="0.4s"
-                >
-                  <div class="footer-title">
-                    <h4 class="title">Quick Link</h4>
-                  </div>
-                  <ul class="link">
-                    <li><a href="javascript:void(0)">Road Map</a></li>
-                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                    <li><a href="javascript:void(0)">Terms of Service</a></li>
-                  </ul>
-                </div>
-                <!-- footer wrapper -->
-                <div
-                  class="link-wrapper wow fadeIn"
-                  data-wow-duration="1s"
-                  data-wow-delay="0.6s"
-                >
-                  <div class="footer-title">
-                    <h4 class="title">Resources</h4>
-                  </div>
-                  <ul class="link">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#facts">Why Sqlify?</a></li>
-                    <li><a target="_blank" href="https://prasadchavan.vercel.app/">Portfolio</a></li>
-                    <li><a target="_blank" href="https://sqlplay-ufv96nxc42zkjj7jeqtzq3.streamlit.app/">Play Ground</a></li>
-                    <li><a href="/free-lite/sqlTranslator.html">Get Start</a></li>
-                  </ul>
-                </div>
-                <!-- footer wrapper -->
-              </div>
-              <!-- footer link -->
-            </div>
-            <div class="col-lg-3 col-md-5 col-sm-12">
-              <div
-                class="footer-contact mt-50 wow fadeIn"
-                data-wow-duration="1s"
-                data-wow-delay="0.8s"
-              >
-                <div class="footer-title">
-                  <h4 class="title">Contact Us</h4>
-                </div>
-                <ul class="contact">
-                  <li>+91 7666128710</li>
-                  <li>askokc4321@gmail.com</li>
-                  <li>www.sqlify.ai</li>
-                  <li>
-                      At Post. B.N 123 SSBT COET Bambhori Jalgaon, 
-                      India.
-                  </li>
-                </ul>
-              </div>
-              <!-- footer contact -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- footer widget -->
-        <div class="footer-copyright">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="copyright d-sm-flex justify-content-between">
-                <div class="copyright-content">
-                  <p class="text">
-                    Designed and Developed by
-                    <a target="_blank" href="https://prasadchavan.vercel.app/" rel="follow">Prasad</a>
-                  </p>
-                </div>
-                <!-- copyright content -->
-              </div>
-              <!-- copyright -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- footer copyright -->
-      </div>
-      <!-- container -->
-      <div id="particles-2"></div>
-    </footer>
-    <!--====== FOOTER PART ENDS ======-->
+		<!--====== BACK TOP TOP PART START ======-->
+		<a href="#" class="back-to-top"> <i class="lni lni-chevron-up"> </i> </a>
+		<!--====== BACK TOP TOP PART ENDS ======-->
 
-    <!--====== BACK TOP TOP PART START ======-->
-    <a href="#" class="back-to-top"> <i class="lni lni-chevron-up"> </i> </a>
-    <!--====== BACK TOP TOP PART ENDS ======-->
+		<!--====== Javascript Files ======-->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/0de48a972c.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/glightbox.min.js"></script>
+		<script src="assets/js/count-up.min.js"></script>
+		<script src="assets/js/particles.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 
-    <!--====== Javascript Files ======-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/0de48a972c.js" crossorigin="anonymous"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+	<!-- Firebase config files  -->
 
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+		import {
+			getAuth,
+			signOut,
+			GoogleAuthProvider,
+			signInWithRedirect,
+			signInWithPopup,
+			getRedirectResult,
+		} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
 
- <!-- Firebase config files  -->
+		// Your web app's Firebase configuration
+		const firebaseConfig = {
+			apiKey: "AIzaSyCXktaWWHVAap1xl2yDfzvokuq7h1RrJ9s",
+			authDomain: "sqlify-auth.firebaseapp.com",
+			projectId: "sqlify-auth",
+			storageBucket: "sqlify-auth.appspot.com",
+			messagingSenderId: "288226704981",
+			appId: "1:288226704981:web:86c3a3eb8e1b2b06a81edc",
+		};
 
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-    import {getAuth, signOut, GoogleAuthProvider, signInWithRedirect, signInWithPopup, getRedirectResult} from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js';
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCXktaWWHVAap1xl2yDfzvokuq7h1RrJ9s",
-      authDomain: "sqlify-auth.firebaseapp.com",
-      projectId: "sqlify-auth",
-      storageBucket: "sqlify-auth.appspot.com",
-      messagingSenderId: "288226704981",
-      appId: "1:288226704981:web:86c3a3eb8e1b2b06a81edc"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = new getAuth(app);
-    const provider = new GoogleAuthProvider(app);
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const auth = new getAuth(app);
+		const provider = new GoogleAuthProvider(app);
 
-    const googleloginbutton = document.querySelector('.googleloginbutton');
-    googleloginbutton.addEventListener('click', (e)=>{
-      
-      signInWithPopup(auth, provider)
-  .then((result) => {
-    // This gives you a Google Access Token. You can use it to access the Google API.
-    const credential = GoogleAuthProvider.credentialFromResult(result);
-    const token = credential.accessToken;
-    // The signed-in user info.
-    const user = result.user;
-    // IdP data available using getAdditionalUserInfo(result)
-    // ...
-    alert(user.displayName);
-    document.querySelector('.form_close').click();
-    document.getElementById('loginlink').style.display='none';
-    document.getElementById('signoutlink').style.display='block';
-    localStorage.setItem('userLoggedIn', 'true');
+		const googleloginbutton = document.querySelector(".googleloginbutton");
+		googleloginbutton.addEventListener("click", (e) => {
+			signInWithPopup(auth, provider)
+				.then((result) => {
+					// This gives you a Google Access Token. You can use it to access the Google API.
+					const credential = GoogleAuthProvider.credentialFromResult(result);
+					const token = credential.accessToken;
+					// The signed-in user info.
+					const user = result.user;
+					// IdP data available using getAdditionalUserInfo(result)
+					// ...
+					alert(user.displayName);
+					document.querySelector(".form_close").click();
+					document.getElementById("loginlink").style.display = "none";
+					document.getElementById("signoutlink").style.display = "block";
+					localStorage.setItem("userLoggedIn", "true");
+				})
+				.catch((error) => {
+					// Handle Errors here.
+					const errorCode = error.code;
+					const errorMessage = error.message;
+					// The email of the user's account used.
+					const email = error.customData.email;
+					// The AuthCredential type that was used.
+					const credential = GoogleAuthProvider.credentialFromError(error);
+					alert(errorMessage);
+					// ...
+				});
+		});
 
-  }).catch((error) => {
-    // Handle Errors here.
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // The email of the user's account used.
-    const email = error.customData.email;
-    // The AuthCredential type that was used.
-    const credential = GoogleAuthProvider.credentialFromError(error);
-    alert(errorMessage);
-    // ...
-  });
+		const signoutlink = document.getElementById("signoutlink");
+		signoutlink.addEventListener("click", (e) => {
+			const auth = getAuth();
+			signOut(auth)
+				.then(() => {
+					alert("Sign Out Success!!");
+					document.getElementById("loginlink").style.display = "block";
+					document.getElementById("signoutlink").style.display = "none";
+					localStorage.removeItem("userLoggedIn");
+					// Sign-out successful.
+				})
+				.catch((error) => {
+					// An error happened.
+					alert(error);
+				});
+		});
 
-    });
+		//On page Load
+		function onPageLoadThen() {
+			const auth = getAuth();
+			const user = auth.currentUser;
+			const userLoggedIn = localStorage.getItem("userLoggedIn");
+			if (userLoggedIn === "true") {
+				document.getElementById("loginlink").style.display = "none";
+				document.getElementById("signoutlink").style.display = "block";
+			} else {
+				document.getElementById("loginlink").style.display = "block";
+				document.getElementById("signoutlink").style.display = "none";
+			}
+		}
 
-  const signoutlink = document.getElementById('signoutlink');
-  signoutlink.addEventListener('click', (e)=>{
-    const auth = getAuth();
-    signOut(auth).then(() => {
-      alert('Sign Out Success!!');
-      document.getElementById('loginlink').style.display='block';
-      document.getElementById('signoutlink').style.display='none';
-      localStorage.removeItem('userLoggedIn');
-  // Sign-out successful.
-  }).catch((error) => {
-    // An error happened.
-    alert(error);
-  });
-  });
-
-  //On page Load
-  function onPageLoadThen() {
-  const auth = getAuth();
-  const user = auth.currentUser;
-  const userLoggedIn = localStorage.getItem('userLoggedIn');
-  if (userLoggedIn === 'true') {
-    document.getElementById('loginlink').style.display = 'none';
-    document.getElementById('signoutlink').style.display = 'block';
-  } else {
-    document.getElementById('loginlink').style.display = 'block';
-    document.getElementById('signoutlink').style.display = 'none';
-  }
-}
-
-onPageLoadThen();
-</script>
-
+		onPageLoadThen();
+	</script>
 </html>
