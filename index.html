@@ -934,6 +934,7 @@
     document.querySelector('.form_close').click();
     document.getElementById('loginlink').style.display='none';
     document.getElementById('signoutlink').style.display='block';
+    localStorage.setItem('userLoggedIn', 'true');
 
   }).catch((error) => {
     // Handle Errors here.
@@ -956,6 +957,7 @@
       alert('Sign Out Success!!');
       document.getElementById('loginlink').style.display='block';
       document.getElementById('signoutlink').style.display='none';
+      localStorage.removeItem('userLoggedIn');
   // Sign-out successful.
   }).catch((error) => {
     // An error happened.
@@ -967,8 +969,8 @@
   function onPageLoadThen() {
   const auth = getAuth();
   const user = auth.currentUser;
-
-  if (user) {
+  const userLoggedIn = localStorage.getItem('userLoggedIn');
+  if (userLoggedIn === 'true') {
     document.getElementById('loginlink').style.display = 'none';
     document.getElementById('signoutlink').style.display = 'block';
   } else {
