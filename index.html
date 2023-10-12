@@ -964,17 +964,20 @@
   });
 
   //On page Load
-  function onPageLoadThen(){
-    const auth = getAuth();
-    if(auth){
-      document.getElementById('loginlink').style.display='none';
-      document.getElementById('signoutlink').style.display='block';
-    }else{
-      document.getElementById('loginlink').style.display='block';
-      document.getElementById('signoutlink').style.display='none';
-    }
+  function onPageLoadThen() {
+  const auth = getAuth();
+  const user = auth.currentUser;
+
+  if (user) {
+    document.getElementById('loginlink').style.display = 'none';
+    document.getElementById('signoutlink').style.display = 'block';
+  } else {
+    document.getElementById('loginlink').style.display = 'block';
+    document.getElementById('signoutlink').style.display = 'none';
   }
-  onPageLoadThen();
-  </script>
+}
+
+onPageLoadThen();
+</script>
 
 </html>
