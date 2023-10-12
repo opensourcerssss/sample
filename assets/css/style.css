@@ -1,4 +1,15 @@
+/* =======
 
+	Template Name: Basic
+	Author: UIdeck
+	Author URI: https://uideck.com/
+	Support: https://uideck.com/support/
+	Version: 1.1
+
+======== */
+/*===========================
+  COMMON css 
+===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
@@ -114,7 +125,7 @@ body {
 }
 .input_box i.pw_hide{
   /* right:0; */
-  left: 240px;
+  left: 230px;
   font-size:10px;
   cursor: pointer;
 }
@@ -156,15 +167,19 @@ body {
    outline: none;
    color: #fff;
 }
-.form-container .googlebutton{
+.form-container .googleBtn{
   background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-   margin-top: 5px;
+   /* margin-top: 5px; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
    width:100%;
    padding: 10px 0;
    border-radius: 10px;
    border: none;
    outline: none;
    color: #fff;
+   cursor: pointer;
 }
 .login_signup{
   font-size: 12px;
