@@ -50,36 +50,82 @@
     });
   });
 // //login/signup
-const formOpenBtn=document.querySelector("#form-open"),
-home =document.querySelector(".home"),
-formContainer=document.querySelector("form-container"),
-formCloseBtn=document.querySelector(".form_close"),
-signupBtn=document.querySelector("#signup"),
-loginBtn=document.querySelector("#login"),
-pwShowHide=document.querySelectorAll(".pw_hide");
+// const formOpenBtn=document.querySelector("#form-open"),
+// home =document.querySelector(".home"),
+// formContainer=document.querySelector("form-container"),
+// formCloseBtn=document.querySelector(".form_close"),
+// signupBtn=document.querySelector("#signup"),
+// loginBtn=document.querySelector("#login"),
+// pwShowHide=document.querySelectorAll(".pw_hide");
 
-formOpenBtn.addEventListener("click",()=>home.classList.add("show"));
-formCloseBtn.addEventListener("click",()=>home.classList.remove("show"));
-pwShowHide.forEach((icon)=>{
-  icon.addEventListener("click",()=>{
-    let getPwInput=icon.parentElement.querySelector("input");
-    if(getPwInput.type === "password"){
-      getPwInput.type="text";
-      icon.classList.replace("uli-eye-splash","uli-eye");
-    }else{
-      getPwInput.type="password";
-      icon.classList.replace("uli-eye","uli-eye-splash");
+// formOpenBtn.addEventListener("click",()=>home.classList.add("show"));
+// formCloseBtn.addEventListener("click",()=>home.classList.remove("show"));
+// pwShowHide.forEach((icon)=>{
+//   icon.addEventListener("click",()=>{
+//     let getPwInput=icon.parentElement.querySelector("input");
+//     if(getPwInput.type === "password"){
+//       getPwInput.type="text";
+//       icon.classList.replace("uli-eye-splash","uli-eye");
+//     }else{
+//       getPwInput.type="password";
+//       icon.classList.replace("uli-eye","uli-eye-splash");
+//     }
+//   })
+// })
+// signupBtn.addEventListener("click",(e)=>{
+//   e.preventDefault();
+//   formContainer.classList.add("active");
+// })
+// loginBtn.addEventListener("click",(e)=>{
+//   e.preventDefault();
+//   formContainer.classList.remove("active");
+// })
+
+const formOpenBtn = document.querySelector("#form-open");
+const home = document.querySelector(".home");
+const formContainer = document.querySelector(".form-container");
+const formCloseBtn = document.querySelector(".form_close");
+const signupBtn = document.querySelector("#signup");
+const loginBtn = document.querySelector("#login");
+const pwShowHide = document.querySelectorAll(".pw_hide");
+
+formOpenBtn.addEventListener("click", () => {
+  home.classList.add("show");
+});
+
+formCloseBtn.addEventListener("click", () => {
+  home.classList.remove("show");
+});
+
+pwShowHide.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    let getPwInput = icon.parentElement.querySelector("input");
+    if (getPwInput.type === "password") {
+      getPwInput.type = "text";
+      icon.classList.replace("uil-eye-slash", "uil-eye");
+    } else {
+      getPwInput.type = "password";
+      icon.classList.replace("uil-eye", "uil-eye-slash");
     }
-  })
-})
-signupBtn.addEventListener("click",(e)=>{
+  });
+});
+
+signupBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  // Toggle between the login and sign-up forms
+  document.getElementById("loginForm").style.display = "none";
+  document.getElementById("signupForm").style.display = "block";
   formContainer.classList.add("active");
-})
-loginBtn.addEventListener("click",(e)=>{
+});
+
+loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  // Toggle between the login and sign-up forms
+  document.getElementById("loginForm").style.display = "block";
+  document.getElementById("signupForm").style.display = "none";
   formContainer.classList.remove("active");
-})
+});
+
   // section menu active
   function onScroll(event) {
     const sections = document.querySelectorAll(".page-scroll");
