@@ -1001,12 +1001,12 @@ googleSignInButton.addEventListener("click", () => {
     document.getElementById('loginlink').style.display='none';
     document.getElementById('signoutlink').style.display='block';
     localStorage.setItem('userLoggedIn', 'true');
-
-      // Set userLoggedIn to true in local storage
-      localStorage.setItem('userLoggedIn', 'true');
+    onPageLoadThen(); // Update the UI
+  
+    
 
       console.log("Google sign-in success: ", user.displayName);
-      onPageLoadThen(); // Update the UI
+     
     })
     .catch((error) => {
       console.error("Google sign-in error: ", error.message);
