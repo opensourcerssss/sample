@@ -994,13 +994,16 @@ googleSignInButton.addEventListener("click", () => {
     .then((result) => {
       // You can access the user information from result.user
       const credential = GoogleAuthProvider.credentialFromResult(result);
-    const token = credential.accessToken;
+      const token = credential.accessToken;
       const user = result.user;
-      alert(user.displayName);
-    document.querySelector('.form_close').click();
-    document.getElementById('loginlink').style.display='none';
-    document.getElementById('signoutlink').style.display='block';
-    localStorage.setItem('userLoggedIn', 'true');
+
+      // Display an alert to the user
+      alert("You have signed in as " + user.displayName);
+
+      // Close the form
+      document.querySelector('.form_close').click();
+      document.getElementById('loginlink').style.display = 'none';
+      document.getElementById('signoutlink').style.display = 'block';
 
       // Set userLoggedIn to true in local storage
       localStorage.setItem('userLoggedIn', 'true');
@@ -1010,13 +1013,15 @@ googleSignInButton.addEventListener("click", () => {
     })
     .catch((error) => {
       console.error("Google sign-in error: ", error.message);
+
+      // Handle the error as needed
       const errorCode = error.code;
-    const errorMessage = error.message;
-    // The email of the user's account used.
-    const email = error.customData.email;
-    // The AuthCredential type that was used.
-    const credential = GoogleAuthProvider.credentialFromError(error);
-    alert(errorMessage);
+      const errorMessage = error.message;
+      // The email of the user's account used.
+      const email = error.customData.email;
+      // The AuthCredential type that was used.
+
+      alert(errorMessage);
     });
 });
 
