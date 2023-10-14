@@ -219,7 +219,7 @@
         <input type="checkbox" id="check">
         <label for="check">Remember me</label>
       </span>
-      <a href="#" class="forgot_pw">Forget password?</a>
+      <a href="#" class="forgot_pw" id="forgotPasswordBtn">Forget password?</a>
     </div>
     <button class="button" id="loginBtn">Login Now</button>
     <!-- <p>or</p> --><hr>
@@ -695,9 +695,9 @@
                   <a href="javascript:void(0)">Sneha</a>
                 </h4>
                 <p class="text">
-                  Hey Sneha here..I contributed by designing DB schema and docs for Sqlify.
+                  Hey Sneha here..I contibuted by designing DB schema and docs for Sqlify.
                 </p>
-                <a class="more" target="blank" href="https://github.com/sneha-4-22">View Github <i class="lni lni-chevron-right"> </i>
+                <a class="more" target="blank" href="https://github.com/prasad-chavan1">View Github <i class="lni lni-chevron-right"> </i>
                 </a>
               </div>
             </div>
@@ -770,10 +770,10 @@
                   <img src="assets/images/logo/sqlify-1.png" alt="logo" />
                 </a>
                 <p class="text">
-                  Welcome to Sqlify!<br>
-We specialize in Natural Language to SQL Translation, simplifying database interactions.
-Transform complexity into simplicity with our user-friendly tool, designed for all skill levels.
-Instantly craft accurate SQL queries from everyday language, speeding up data access.
+                  Lorem ipsum dolor sit amet consetetur sadipscing elitr,
+                  sederfs diam nonumy eirmod tempor invidunt ut labore et dolore
+                  magna aliquyam.
+                </p>
                 <ul class="social">
                   <li>
                     <a target="_blank" href="askokc4321@gmail.com">
@@ -902,7 +902,8 @@ Instantly craft accurate SQL queries from everyday language, speeding up data ac
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
-  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut,GoogleAuthProvider,signInWithPopup} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut,GoogleAuthProvider,signInWithPopup,sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+  
 
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -969,6 +970,28 @@ loginBtn.addEventListener("click", (e) => {
     });
 });
 
+const forgotPasswordBtn = document.getElementById("forgotPasswordBtn");
+const emailInput = document.querySelector("#login_email"); // or use the appropriate input field
+
+forgotPasswordBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const email = emailInput.value;
+  const auth = getAuth(app);
+
+  // Send a password reset email
+sendPasswordResetEmail(auth, email)
+  .then(() => {
+    // Password reset email sent!
+    console.log("reset link sent on the given email")
+    alert("reset link has been sent!")
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+});
+
 // Attach the signOutUser function to the signout button
 signoutlink.addEventListener("click", (e) => {
   e.preventDefault();
@@ -1029,7 +1052,7 @@ signoutlink.addEventListener("click", (e) => {
       .catch((error) => {
         console.error("Sign out error:", error.message);
       });
-  });
+    });
 
 //code snippet for changing login/sign in states
 function onPageLoadThen() {
