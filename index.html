@@ -996,17 +996,12 @@ googleSignInButton.addEventListener("click", () => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
     const token = credential.accessToken;
       const user = result.user;
-      alert(user.displayName);
+      alert("Google sign-in success: " + user.displayName);
     document.querySelector('.form_close').click();
     document.getElementById('loginlink').style.display='none';
     document.getElementById('signoutlink').style.display='block';
     localStorage.setItem('userLoggedIn', 'true');
-    onPageLoadThen(); // Update the UI
-  
-    
-
-      console.log("Google sign-in success: ", user.displayName);
-     
+    onPageLoadThen(); // Update the UI   
     })
     .catch((error) => {
       console.error("Google sign-in error: ", error.message);
