@@ -990,38 +990,23 @@ const googleSignInButton = document.getElementById("googleSignInButton");
 googleSignInButton.addEventListener("click", () => {
   const provider = new GoogleAuthProvider();
 
+  const authWindow = window.open('', '_blank', 'width=600, height=400');
+  
+  // Use your authentication method (e.g., signInWithPopup) here
   signInWithPopup(auth, provider)
     .then((result) => {
       // You can access the user information from result.user
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      const token = credential.accessToken;
       const user = result.user;
-
-      // Display an alert to the user
       alert("You have signed in as " + user.displayName);
 
-      // Close the form
+      // Close the popup window
       authWindow.close();
-      document.getElementById('loginlink').style.display = 'none';
-      document.getElementById('signoutlink').style.display = 'block';
-
-      // Set userLoggedIn to true in local storage
-      localStorage.setItem('userLoggedIn', 'true');
-
-      console.log("Google sign-in success: ", user.displayName);
-      onPageLoadThen(); // Update the UI
     })
     .catch((error) => {
       console.error("Google sign-in error: ", error.message);
+      alert("Sign-in error: " + error.message);
 
-      // Handle the error as needed
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // The email of the user's account used.
-      const email = error.customData.email;
-      // The AuthCredential type that was used.
-
-      alert(errorMessage);
+      // You may want to handle the error or provide feedback to the user
     });
 });
 
