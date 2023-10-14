@@ -1001,7 +1001,7 @@ googleSignInButton.addEventListener("click", () => {
       alert("You have signed in as " + user.displayName);
 
       // Close the form
-      document.querySelector('.form_close').click();
+      signInForm.style.display = "none";
       document.getElementById('loginlink').style.display = 'none';
       document.getElementById('signoutlink').style.display = 'block';
 
