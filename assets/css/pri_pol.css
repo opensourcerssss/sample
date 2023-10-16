@@ -1,0 +1,17 @@
+*{
+    background-color: #999adb;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    background-color: #6f83c6;
+    border: 2px solid #0319a9;
+
+}
+.material-symbols-outlined{
+    background-color: #6f83c6;
+    padding: 10px;
+    font-size: 30px; 
+  vertical-align: middle; 
+  display: inline-block;
+}
