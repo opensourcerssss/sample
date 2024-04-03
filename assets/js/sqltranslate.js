@@ -6,7 +6,7 @@ const deleteButton = document.querySelector("#delete-btn");
 const micBtn = document.getElementById("mic-btn");
 
 let userText = null;
-const API_KEY = "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"; // Paste your API key here
+const API_KEY = "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"; // Paste your API key here
 themeButton.click();
 
 const loadDataFromLocalstorage = () => {
